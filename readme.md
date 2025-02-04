@@ -1,5 +1,5 @@
 # HRMS Attendance Automation
-<!-- this may not work with all the hrms out there - just for personal and confined premise use -->
+### this may not work with all the hrms out there - just for personal and confined premise use -->
 
 An automated solution for managing HRMS attendance tracking with features for punch-in/out, history viewing, and scheduled operations.
 
