@@ -31,6 +31,7 @@ An automated solution for managing HRMS attendance tracking with features for pu
    - HRMS Username
    - Password
    - Portal URL
+- this step is required only for the first time
 
 Your credentials will be securely encrypted and stored locally in an sql-lite database.
 
