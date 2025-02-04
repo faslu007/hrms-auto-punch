@@ -89,39 +89,6 @@ def go_to_desired_page(driver, page_url):
         return False
 
 
-def load_patient_data_from_file(file_path):
-    """Load patient data from a JSON file."""
-    try:
-        with open(file_path, 'r') as file:
-            return json.load(file)
-    except Exception as e:
-        print(f"Failed to load patient data from {file_path}: {e}")
-        return None
-
-def get_mock_data(data_type):
-    """Load mock data from a JSON file.
-
-    Args:
-        data_type (str): Type of data needed to pull from the local directory. Currently, only "patient_mock" is supported.
-
-    Returns:
-        dict or None: Returns the mock data as a dictionary if successful, or None if an error occurs.
-    
-    Raises:
-        ValueError: If the provided data_type does not match any supported types.
-    """
-    root_dir = os.path.dirname(os.path.abspath(__file__))
-
-    try:
-        if data_type == "patient_mock":
-            patient_data_file = os.path.join(root_dir, 'mock_data/patient_mock.json')
-            return load_patient_data_from_file(patient_data_file)
-        else:
-            raise ValueError(f"Unsupported data type: {data_type}. Supported types are: 'patient_mock', 'claim_mock'.")
-    except Exception as e:
-        print(f"An error occurred while getting mock data: {e}")
-        return None
-
 
 remove_selection_from_select_box_js_script = """
     // Construct the selector to match the element with specific attributes
